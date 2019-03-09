@@ -14,7 +14,7 @@ All files in this repository fall under the license specified in [COPYING](COPYI
 
 **About Libbitcoin**
 
-The libbitcoin toolkit is a set of cross platform C++ libraries for building bitcoin applications. The toolkit consists of several libraries, most of which depend on the foundational [libbitcoin](https://github.com/libbitcoin/libbitcoin) library. Each library's repository can be cloned and built using common [automake](http://www.gnu.org/software/automake) 1.14+ instructions. There are no packages yet in distribution however each library includes an installation script (described below) which is regularly verified in the automated build.
+The libbitcoin toolkit is a set of cross platform C++ libraries for building [bitcoin](https://www.currency.wiki/btc_usd) applications. The toolkit consists of several libraries, most of which depend on the foundational [libbitcoin](https://github.com/libbitcoin/libbitcoin) library. Each library's repository can be cloned and built using common [automake](http://www.gnu.org/software/automake) 1.14+ instructions. There are no packages yet in distribution however each library includes an installation script (described below) which is regularly verified in the automated build.
 
 ## Installation
 
@@ -96,7 +96,7 @@ $ xcode-select --install
 
 #### Using Homebrew
 
-First install [Homebrew](https://brew.sh). 
+First install [Homebrew](https://brew.sh).
 
 Next install the [build system](http://wikipedia.org/wiki/GNU_build_system) (Automake minimum 1.14) and [wget](http://www.gnu.org/software/wget):
 ```sh
@@ -226,7 +226,7 @@ Dependencies apart from the libbitcoin libraries are available as [NuGet package
   * [libzmq](http://www.nuget.org/packages/libzmq_vc120) [required for client-server repositories only]
 
 The packages can be viewed using the [NuGet package manager](http://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog) from the libbitcoin solution. The package manager will prompt for download of any missing packages.
-  
+
 The libbitcoin solution files are configured with references to these packages. The location of the NuGet repository is controlled by the [nuget.config](https://github.com/libbitcoin/libbitcoin/blob/master/builds/msvc/nuget.config) file `repositoryPath` setting **and** the `NuGetPackageRoot` element of **each** [\[project\].props](https://github.com/libbitcoin/libbitcoin/blob/master/builds/msvc/vs2017/libbitcoin/libbitcoin.props) file.
 
 #### Build Libbitcoin Projects
